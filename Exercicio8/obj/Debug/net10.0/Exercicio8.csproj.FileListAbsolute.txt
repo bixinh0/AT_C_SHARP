@@ -1,0 +1,15 @@
+C:\Users\Luan\Desktop\AT C SHARP\Exercicio8\bin\Debug\net10.0\Exercicio8.exe
+C:\Users\Luan\Desktop\AT C SHARP\Exercicio8\bin\Debug\net10.0\Exercicio8.deps.json
+C:\Users\Luan\Desktop\AT C SHARP\Exercicio8\bin\Debug\net10.0\Exercicio8.runtimeconfig.json
+C:\Users\Luan\Desktop\AT C SHARP\Exercicio8\bin\Debug\net10.0\Exercicio8.dll
+C:\Users\Luan\Desktop\AT C SHARP\Exercicio8\bin\Debug\net10.0\Exercicio8.pdb
+C:\Users\Luan\Desktop\AT C SHARP\Exercicio8\obj\Debug\net10.0\Exercicio8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luan\Desktop\AT C SHARP\Exercicio8\obj\Debug\net10.0\Exercicio8.AssemblyInfoInputs.cache
+C:\Users\Luan\Desktop\AT C SHARP\Exercicio8\obj\Debug\net10.0\Exercicio8.AssemblyInfo.cs
+C:\Users\Luan\Desktop\AT C SHARP\Exercicio8\obj\Debug\net10.0\Exercicio8.csproj.CoreCompileInputs.cache
+C:\Users\Luan\Desktop\AT C SHARP\Exercicio8\obj\Debug\net10.0\Exercicio8.dll
+C:\Users\Luan\Desktop\AT C SHARP\Exercicio8\obj\Debug\net10.0\refint\Exercicio8.dll
+C:\Users\Luan\Desktop\AT C SHARP\Exercicio8\obj\Debug\net10.0\Exercicio8.pdb
+C:\Users\Luan\Desktop\AT C SHARP\Exercicio8\obj\Debug\net10.0\Exercicio8.genruntimeconfig.cache
+C:\Users\Luan\Desktop\AT C SHARP\Exercicio8\obj\Debug\net10.0\ref\Exercicio8.dll
+C:\Users\Luan\Desktop\AT C SHARP\Exercicio8\obj\Debug\net10.0\Exercicio8.csproj.Up2Date

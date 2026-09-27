@@ -1,0 +1,2 @@
+Notebook;2;4500
+Mouse;10;75,5
