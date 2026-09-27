@@ -15,7 +15,7 @@ namespace Exercicio7
             {
                 conta.Depositar(500.00);
             }
-            catch (InvalidOperationException erro)
+            catch (ArgumentException erro)
             {
                 Console.WriteLine(erro.Message);
             }

@@ -11,44 +11,106 @@ namespace Exercicio9.Services
 
         public bool InserirProduto(Produto produto)
         {
-            int totalProdutos = File.Exists(ARQUIVO) ? File.ReadAllLines(ARQUIVO).Length : 0;
+            int totalProdutos = ContarProdutos();
 
             if (totalProdutos >= LIMITE)
             {
                 return false;
             }
 
-            string linha = $"{produto.Nome};{produto.Quantidade};{produto.Preco}";
-            File.AppendAllText(ARQUIVO, linha + Environment.NewLine);
-            return true;
+            try
+            {
+                using (StreamWriter escritor = new StreamWriter(ARQUIVO, true))
+                {
+                    escritor.WriteLine($"{produto.Nome};{produto.Quantidade};{produto.Preco}");
+                }
+                return true;
+            }
+            catch (IOException erro)
+            {
+                Console.WriteLine($"Erro ao salvar o produto: {erro.Message}");
+                return false;
+            }
         }
 
         public void ListarProdutos()
         {
-            if (!File.Exists(ARQUIVO) || File.ReadAllLines(ARQUIVO).Length == 0)
+            if (!File.Exists(ARQUIVO))
             {
-                Console.WriteLine("Nenhum produto cadastrado ainda.");
+                Console.WriteLine("Nenhum produto cadastrado.");
                 return;
             }
 
-            Console.WriteLine("\n--- Produtos cadastrados ---");
-            string[] linhas = File.ReadAllLines(ARQUIVO);
-
-            foreach (string linha in linhas)
+            try
             {
-                Produto produto = ConverterLinhaEmProduto(linha);
-                Console.WriteLine(produto);
+                using (StreamReader leitor = new StreamReader(ARQUIVO))
+                {
+                    string linha;
+                    bool encontrouAlgum = false;
+
+                    Console.WriteLine("\n--- Produtos cadastrados ---");
+
+                    while ((linha = leitor.ReadLine()) != null)
+                    {
+                        if (string.IsNullOrWhiteSpace(linha))
+                        {
+                            continue;
+                        }
+
+                        Produto produto = ConverterLinhaEmProduto(linha);
+
+                        if (produto != null)
+                        {
+                            Console.WriteLine(produto);
+                            encontrouAlgum = true;
+                        }
+                    }
+
+                    if (!encontrouAlgum)
+                    {
+                        Console.WriteLine("Nenhum produto cadastrado.");
+                    }
+                }
+            }
+            catch (IOException erro)
+            {
+                Console.WriteLine($"Erro ao ler o arquivo: {erro.Message}");
             }
         }
 
+        private int ContarProdutos()
+        {
+            if (!File.Exists(ARQUIVO))
+            {
+                return 0;
+            }
+
+            int total = 0;
+            using (StreamReader leitor = new StreamReader(ARQUIVO))
+            {
+                while (leitor.ReadLine() != null)
+                {
+                    total++;
+                }
+            }
+            return total;
+        }
         private Produto ConverterLinhaEmProduto(string linha)
         {
-            string[] dados = linha.Split(';');
-            string nome = dados[0];
-            int quantidade = int.Parse(dados[1]);
-            double preco = double.Parse(dados[2]);
+            try
+            {
+                string[] dados = linha.Split(';');
+                string nome = dados[0];
+                int quantidade = int.Parse(dados[1]);
+                double preco = double.Parse(dados[2]);
 
-            return new Produto(nome, quantidade, preco);
+                return new Produto(nome, quantidade, preco);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine($"Linha corrompida ignorada: \"{linha}\"");
+                return null;
+            }
         }
     }
 }

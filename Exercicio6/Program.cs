@@ -14,7 +14,7 @@ namespace Exercicio6
             novoAluno.medias = 7.5;
 
             novoAluno.ExibirDados();
-            novoAluno.VerificarAprovacao();
+            Console.WriteLine($"Situação: {novoAluno.VerificarAprovacao()}");
         }
     }
 }

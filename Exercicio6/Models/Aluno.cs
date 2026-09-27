@@ -16,15 +16,15 @@ namespace Exercicio6.Models
                 $"Curso: {curso} \n" +
                 $"Média das notas: {medias} \n");
         }
-        public void VerificarAprovacao()
+        public string VerificarAprovacao()
         {
             if (medias >= 7)
             {
-                Console.WriteLine("Aluno aprovado!");
+                return "Aprovado";
             }
             else
             {
-                Console.WriteLine("Aluno reprovado!");
+                return "Reprovado";
             }
         }
     }

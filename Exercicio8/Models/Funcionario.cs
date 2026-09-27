@@ -6,7 +6,7 @@ namespace Exercicio8.Models
     {
         private string nome;
         private string cargo;
-        internal double salarioBase;
+        protected double salarioBase;
 
         public Funcionario(string nome, string cargo, double salarioBase)
         {

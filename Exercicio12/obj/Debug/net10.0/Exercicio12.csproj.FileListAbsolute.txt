@@ -13,3 +13,4 @@ C:\Users\Luan\Desktop\AT C SHARP\Exercicio12\obj\Debug\net10.0\Exercicio12.pdb
 C:\Users\Luan\Desktop\AT C SHARP\Exercicio12\obj\Debug\net10.0\Exercicio12.genruntimeconfig.cache
 C:\Users\Luan\Desktop\AT C SHARP\Exercicio12\obj\Debug\net10.0\ref\Exercicio12.dll
 C:\Users\Luan\Desktop\AT C SHARP\Exercicio12\obj\Debug\net10.0\Exercici.E208DCA8.Up2Date
+C:\Users\Luan\Desktop\AT C SHARP\Exercicio12\obj\Debug\net10.0\Exercicio12.sourcelink.json

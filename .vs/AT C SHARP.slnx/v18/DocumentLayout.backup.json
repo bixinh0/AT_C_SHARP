@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Luan\\Desktop\\AT C SHARP\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{B1716B16-9068-4DA4-1396-4369D816D5E5}|Exercicio10\\Exercicio10.csproj|c:\\users\\luan\\desktop\\at c sharp\\exercicio10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1716B16-9068-4DA4-1396-4369D816D5E5}|Exercicio10\\Exercicio10.csproj|solutionrelative:exercicio10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,19 +26,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Luan\\Desktop\\AT C SHARP\\Exercicio10\\Program.cs",
-              "RelativeDocumentMoniker": "Exercicio10\\Program.cs",
-              "ToolTip": "C:\\Users\\Luan\\Desktop\\AT C SHARP\\Exercicio10\\Program.cs",
-              "RelativeToolTip": "Exercicio10\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-27T22:59:27.816Z",
-              "EditorCaption": ""
             }
           ]
         }
